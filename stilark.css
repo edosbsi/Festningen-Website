@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    background-color:#fbfbfb;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #C8C2B4;
+    box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+    position: absolute;
+    width:99.2%;
+
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    padding-left:10px;
+    padding-right: 0px;
+} 
+  
+nav a {
+    background-color: #C8C2B4;
+    color: #424243;
+    text-align: center;
+    padding: 5px;
+    margin: 4px 5px;
+    text-decoration: none;
+}
+
+nav img {
+  background-color: #C8C2B4;
+}
+
+#HomeLogo{ 
+  text-align:right;
+  font-weight:900;
+  font-size: 32px;
+  display:flex;
+  align-items:center;
+  background-color: #C8C2B4;
+}
+
+/* koden til hoveddelen starter her*/
+.WelcomeImg{
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+  width:100%;
+}
+
+#wrapper{
+  margin: 14px;
+  display:grid;
+  gap: 14px;
+  grid-template-areas: "A B"
+                       "C B"
+}
+
+#Historie{grid-area:A;}
+#Turisme{grid-area:B;}
+#Området{grid-area:C;}
+
+#wrapper section, p, h1, a{
+  background-color: #F1EAE8;
+  color: #3f3e3b;
+  padding: 4px;
+  overflow:scroll;
+}
+
+h1 {
+  font-weight: 500;
+  text-align:center;
+}
+
+p {font-weight: 300;}
+
+a {
+  font-weight: 300 Italic;
+  color: #4563a9;
+}
+
+#wrapper section{
+  box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+
+.OmrådetInnhold{
+  display:flex;
+}
+
+#Turisme{
+  text-align:center;
+}
+
+#Turisme img{
+  width:75%;
+}
+
+.Innhold{
+  flex-direction: column;
+  align-items: center;
+  background-color: #F1EAE8;
+}
+
+#Området img{
+  width:34%;
+  color:#F1EAE8;
+}
+
+section img{
+  box-shadow: 0 0 4px rgba(42, 42, 42, 0.75);
+  margin:2px;
+}
+
+@media (max-width: 800px) {
+    #wrapper {
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    background-color:#fbfbfb;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #C8C2B4;
+    box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+    position: absolute;
+    width:99.2%;
+
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    padding-left:10px;
+    padding-right: 0px;
+} 
+  
+nav a {
+    background-color: #C8C2B4;
+    color: #424243;
+    text-align: center;
+    padding: 5px;
+    margin: 4px 5px;
+    text-decoration: none;
+}
+
+nav img {
+  background-color: #C8C2B4;
+}
+
+#HomeLogo{ 
+  text-align:right;
+  font-weight:900;
+  font-size: 32px;
+  display:flex;
+  align-items:center;
+  background-color: #C8C2B4;
+}
+
+/* header */
+
+header{
+    padding:100px 4% 16px;
+    text-align:center;
+    margin-bottom:40px;
+}
+header h1, header p{
+    color:#38383a;
+    text-shadow: 0 2px 2px  rgba(42, 42, 42, 0.114);
+}
+header h1{font-size:60px}
+header p{font-size:30px}
+
+
+/* top delen med top 5, museum og omvisning*/
+#top{
+    margin: 0 14px;
+    display:grid;
+    gap: 14px;
+    grid-template-areas: "A B"
+                         "A B"
+                         "A C"
+}
+
+#TaMed{grid-area:A}
+#Museum{grid-area:B}
+#Omvisning{grid-area:C}
+
+#top p,section,dt,dd,dl,a,h2{
+    background-color: #F1EAE8;
+    color: #3f3e3b;
+}
+
+h2{font-weight:600}
+#top a{color: #4563a9;}
+dd,p{padding-bottom:12px; font-weight:300;}
+dt{font-size:18px; margin-bottom:5px;}
+#top h2{margin-bottom:12px}
+
+#top section{
+    box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+    padding: 16px 24px;
+    border-radius: 4px;
+}
+
+#top img{
+    text-align:center;
+    width:50%;
+}
+
+
+/* arrangementer*/
+#Arrangementer{
+    padding: 15px 14px;
+    margin-top:50px;
+    background-color: #889ac3;
+    box-shadow: 2px 2px 8px 2px rgba(42, 42, 42, 0.4);
+
+    display: flex;
+    flex-direction: column;
+}
+
+#LumagicaLyspark,#Festivaler{
+    background-color: #889ac3;
+    margin: 40px 0 20px;
+}
+
+#Salutt{padding-bottom:20px;
+    background-color: #889ac3;
+}
+
+#Festivaler{margin-top:15px;}
+
+#Arrangementer h2,#Arrangementer p,#Arrangementer a, #Arrangementer h3{
+    background-color: #889ac3;
+    color:#272725;
+}
+
+#Arrangementer p{font-size:18px}
+
+h3{font-weight:400;}
+
+.imgs img{
+    width:23%;
+    box-shadow: 0 0 4px rgba(42, 42, 42, 0.75);
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-between;
+    background-color: #889ac3;
+}
+
+#LumagicaLyspark{
+    background-color: #889ac3;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+@media (max-width: 800px) {
+    #top {
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

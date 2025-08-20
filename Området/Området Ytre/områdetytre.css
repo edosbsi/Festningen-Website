@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    background-color:#fbfbfb;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #C8C2B4;
+    box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+    position: absolute;
+    width:99.2%;
+
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    padding-left:10px;
+    padding-right: 0px;
+} 
+  
+nav a {
+    background-color: #C8C2B4;
+    color: #424243;
+    text-align: center;
+    padding: 5px;
+    margin: 4px 5px;
+    text-decoration: none;
+}
+
+nav img {
+  background-color: #C8C2B4;
+}
+
+#HomeLogo{ 
+  text-align:right;
+  font-weight:900;
+  font-size: 32px;
+  display:flex;
+  align-items:center;
+  background-color: #C8C2B4;
+}
+
+/* koden til sections starter her */
+
+p,li{font-weight: 300}
+h1{font-weight:400}
+
+#hoved{
+    margin: 0 12px 14px;
+    padding-top:72px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:14px;
+}
+
+.tekst p,h1,ul,li{
+    color:#3f3e3b;
+    background-color:#F1EAE8;
+}
+
+.tekst p,ul{padding-bottom:10px;}
+
+section img{
+    box-shadow: 0 0 4px rgba(42, 42, 42, 0.75);
+    background-color:#F1EAE8;
+}
+
+section:not(#Bakklandet){
+    padding:20px;
+    background-color:#F1EAE8;
+    box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.img p{
+    color:rgb(55, 55, 53);
+    background-color:#f1eae800;
+    font-size:14px;
+}
+
+.img{
+    background-color:#F1EAE8;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+
+
+/*Bakklandet delens kodingen*/
+#Bakklandet h1,p{
+    color:#272725;
+    background-color: #889ac3;
+    padding:4px;
+}
+
+#Bakklandet img{
+    background-color: #889ac3;
+    margin:15px 0;
+    width:65%;
+}
+
+#Bakklandet{
+    background-color: #889ac3;
+    box-shadow: 2px 2px 8px 2px rgba(42, 42, 42, 0.4);
+    padding:15px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+}
+
+@media (max-width: 800px) { /*gjør at hvis nettsiden er forstørret for mye, hoveddelen endrer format også*/
+    #hoved {
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+}
+

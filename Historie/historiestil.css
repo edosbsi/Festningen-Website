@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    background-color:#fbfbfb;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #C8C2B4;
+    box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+    position: absolute;
+    width:99.2%;
+
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    padding-left:10px;
+    padding-right: 0px;
+
+} 
+  
+nav a {
+    background-color: #C8C2B4;
+    color: #424243;
+    text-align: center;
+    padding: 5px;
+    margin: 4px 5px;
+    text-decoration: none;
+}
+
+nav img {
+  background-color: #C8C2B4;
+}
+
+
+#HomeLogo{ 
+    text-align:right;
+    font-weight:900;
+    font-size: 32px;
+    display:flex;
+    align-items:center;
+    background-color: #C8C2B4;
+}
+
+
+/* Koden til section1, "Hvorfor ble festningen bygget?", starter her */
+
+#section1{
+    background-color: #889ac3;
+    padding: 85px 16px 25px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#section1 p, #section1 h1{
+    background-color:#889ac3;
+    color:#262726;
+}
+
+#section1 h1 {
+    font-size:35px;
+    padding: 7px 4px;
+}
+
+#section1 p {
+    padding: 5px 30px 5px 4px;
+    font-size: 22px;  
+    word-spacing:3px;
+    letter-spacing:0.5px;
+}
+
+#section1 img{
+    margin: 4px 10px;
+    box-shadow: 0 0 4px rgba(42, 42, 42, 0.75);
+}
+
+/* Gjør at bildet av Kong Christian går under teksten når nettsiden er minsket for mye*/
+@media (max-width: 600px) {
+    #section1 {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 120px 16px 40px 16px;
+    }
+
+    #section1 .tekstØverst, #section1 img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Koden til hendelsene section 2,3 og 4starter her*/
+
+.hendelse{
+    margin: 0 16px;
+}
+
+.hendelse p,dd{
+    color:#2f302f;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 10px 15px 0;
+}
+
+dt{
+    color:#2e302e;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+dd::before{ /*Her setter jeg bullet points før hver dd*/
+    content: '\2022'; 
+    color: #2f302f; 
+    font-weight: bold;
+    margin: 0 14px; 
+}
+
+dt::before{ /*Her gjør jeg at hver dt(term) i lista ligger på lik linje med beskrivelsene*/
+    content:" ";
+    margin: 0 16px;
+}
+
+#sectionWrapper h1, #section2 h1{
+    color:#2a2b2a;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+
+/*Gjør at bilder står til høyre siden*/
+#sectionWrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}   
+
+#bildeWrapper{
+    display: grid;
+    gap:10px;
+    margin-right:26px;
+    margin-bottom:50px;
+    grid-template-columns:subgrid;
+
+}
+
+#bildeWrapper img{
+    width:245px;
+    box-shadow: 0 0 4px rgba(42, 42, 42, 0.75);
+}
+
+
+/* Gjør at bildene i bildeWrapper går under teksten når nettsiden er forstørret for mye*/
+@media (max-width: 800px) {
+    #sectionWrapper {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+}

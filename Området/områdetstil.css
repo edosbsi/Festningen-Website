@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    background-color:#fbfbfb;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #C8C2B4;
+    box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+    position: absolute;
+    width:99.2%;
+
+    display:flex;
+    align-items: center;
+    font-weight: 600;
+    padding-left:10px;
+    padding-right: 0px;
+} 
+  
+nav a {
+    background-color: #C8C2B4;
+    color: #424243;
+    text-align: center;
+    padding: 5px;
+    margin: 4px 5px;
+    text-decoration: none;
+}
+
+nav img {
+  background-color: #C8C2B4;
+}
+
+#HomeLogo{ 
+  text-align:right;
+  font-weight:900;
+  font-size: 32px;
+  display:flex;
+  align-items:center;
+  background-color: #C8C2B4;
+}
+
+/* programmeringen til hoveddelen starter her*/
+
+#wrapper{
+    padding:78px 20px 10px;
+    display:grid;
+    gap:20px;
+    grid-template-areas: "K A B"
+                         "K A B"
+                         "C C C"
+}
+
+#IndreFestning{grid-area:A}
+#YtreFestning{grid-area:B}
+#OmrådetRundt{grid-area:C}
+#Karttegn{grid-area:K}
+
+#Karttegn img{
+    background-color: #F1EAE8;
+    padding-left:10px;
+}
+
+
+/* Gir stil til tabellene*/
+
+table, tr, td, th{
+    background-color: #F1EAE8;
+    color: #3f3e3b;
+}
+
+table{
+    margin:0 80px;
+}
+
+tr > td:nth-child(odd){
+    text-align:right;
+    padding-right: 12px;
+}
+
+
+/* Fortsetter med koden til sectionene*/
+
+#wrapper section, p, h1, ol, li,a{
+  background-color: #F1EAE8;
+  color: #3f3e3b;
+}
+
+h1{
+  font-weight: 400;
+  text-align:center;
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+p, ol{
+    padding: 0 15%;
+    color:#353835;
+    font-size:18px;
+    font-weight:300;
+}
+
+#YtreFestning img, #IndreFestning img{
+    box-shadow: 0 0 4px rgba(42, 42, 42, 0.75);
+    width:75%;
+    margin: 4px 10px 10px;
+    align-self:center;
+}
+
+#IndreFestning img{width:73%}
+.leanLeft{text-align:left;}
+
+section{
+    box-shadow: 0 2px 4px 0 rgba(42, 42, 42, 0.4);
+    padding: 24px 0;
+    border-radius: 4px;
+    display:flex;
+    flex-direction:column;
+    align-items:space-between;
+}
+
+#Knapp a {
+    font-weight: 600;
+    font-size: 30px;
+    text-align:center;
+    width:30%;
+    padding: 12px 26px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(42, 42, 42, 0.75);
+    background-color: #889ac3;
+    text-decoration: none;
+}
+
+#wrapper p{
+    padding: 8px 0 16px;
+    margin: 20px 10px  0px;
+}
+
+p a{
+    font-weight: 600;
+    padding: 0;
+    color: #4e5668;
+}
+
+#OmrådetRundt{
+    align-items:center;
+}
+
+iframe{
+    width:70%;
+    margin: 10px;
+    box-shadow: 0 0 4px rgba(42, 42, 42, 0.75);
+}
+
+
+/* Gjør formatet til nettsiden endrer seg når det blir for smått*/
+@media (max-width: 1000px) {
+    #wrapper {
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #Karttegn img{
+        background-color: #F1EAE8;
+        padding-left:10px;
+        width:150px;
+    }
+}
